@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
@@ -23,7 +24,7 @@
           Choose a one-word topic and enter it into the spece below to generate
           a poem.
         </p>
-        <form action="">
+        <form action="" id="poem-generator-form">
           <input
             type="text"
             placeholder="Enter your topic"
@@ -34,8 +35,9 @@
           />
           <input type="submit" class="submit-button" />
         </form>
+
+        <div class="poem" id="poem"></div>
       </div>
-      <div class="container poem body-p">Poem placement</div>
     </main>
     <footer>
       <p>

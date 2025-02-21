@@ -14,7 +14,7 @@ header {
     url("../images/header-image-two.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 6px;
+  border-radius: 8px;
   display: block;
   filter: brightness(121%) contrast(161%) saturate(155%);
   margin: 0 auto;
@@ -31,7 +31,7 @@ h1 {
 
 .container {
   background: white;
-  border-radius: 6px;
+  border-radius: 8px;
   margin: 30px auto;
   max-width: 600px;
   padding: 30px;
