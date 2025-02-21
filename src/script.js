@@ -1,5 +1,4 @@
 function displayPoem(response) {
-  console.log("poem generated");
   new Typewriter("#poem", {
     strings: response.data.answer,
     autoStart: true,
@@ -18,9 +17,15 @@ function generatePoem(event) {
     "You are a poem expert who loves to write short, sassy, funny poems. Your mission is to generate a short, sassy, funny poem of maximum 4 lines. Each line should only have one phrase and be separated with a <br/>. The output should only be the 4 lines of poem, nothing else. Make sure to be polite and to follow the user instructions. Sign the poem at the end with 'xoxo Gossip Girl'";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("Generating poem");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+
+  new Typewriter("#poem", {
+    strings: `Generating a poem about ${instructionsInput.value} xoxo`,
+    autoStart: true,
+    delay: 20,
+    cursor: "",
+  });
 
   axios.get(apiUrl).then(displayPoem);
 }
