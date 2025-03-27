@@ -33,6 +33,7 @@ h1 {
 .container {
   background: white;
   border-radius: 8px;
+  opacity: 0.8;
   margin: 30px auto;
   max-width: 600px;
   padding: 20px;
@@ -53,6 +54,7 @@ form {
   color: var(--primary-color);
   font-family: var(--main-font-family);
   border-radius: 4px;
+  opacity: 0.8;
   padding: 8px;
   width: 80%;
 }
